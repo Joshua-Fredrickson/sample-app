@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>some cool app</title>
+</head>
+<body>
+    <H1>My First Fullstack App</H1>
+    <p>
+      <!-- fill with API data -->
+    </p>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script> $.ajax({
+    url: '/api/codefellows',
+    method: 'GET',
+    sucess: function(data, message) {
+      console.log('response from API: ', data);
+    }
+  });
+  </script>
+</body>
+</html>
